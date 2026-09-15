@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export function ActionStrip() {
   return (
-    <section className="bg-surface border-y border-border/80 relative z-30 shadow-sm">
+    <section className="bg-surface border-y border-border/80 relative z-30 shadow-sm overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-border/70">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-border/70">
           
           {/* 1. Phone */}
           <a 

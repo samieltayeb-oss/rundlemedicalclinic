@@ -27,9 +27,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
-        className={`${manrope.variable} ${cormorant.variable} font-sans antialiased bg-background text-foreground flex flex-col min-h-screen pt-20 lg:pt-24`}
+        className={`${manrope.variable} ${cormorant.variable} font-sans antialiased bg-background text-foreground flex flex-col min-h-screen pt-20 lg:pt-24 overflow-x-hidden w-full max-w-full`}
       >
         <div className="fixed top-0 left-0 right-0 z-50 bg-background">
           <SmartNotice />

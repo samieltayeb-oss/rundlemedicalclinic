@@ -6,18 +6,18 @@ export function HumanCareStory() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
-          <div className="order-2 lg:order-1 relative">
-            <div className="lg:w-1/2 aspect-[4/5] rounded-3xl overflow-hidden relative shadow-xl mx-auto lg:mx-0">
-              <Image 
-                src="/assets/production/web/human-care-story.webp" 
-                alt="Compassionate care at Rundle Medical Clinic" 
+          <div className="relative order-2 lg:order-1 overflow-hidden sm:overflow-visible">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/real_clinic_2.png"
+                alt="Compassionate patient consultation at Rundle Medical Clinic"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
             {/* Decorative element */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none" />
+            <div className="hidden sm:block absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none" />
           </div>
 
           <div className="order-1 lg:order-2">
