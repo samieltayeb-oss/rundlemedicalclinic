@@ -56,7 +56,7 @@ export default function NewPatientsPage() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-4xl">
             <div className="bg-surface border border-border rounded-3xl p-8 md:p-12 mb-16 shadow-sm">
-              <h2 className="font-serif text-3xl text-white mb-6">Patient Onboarding Process</h2>
+              <h2 className="font-serif text-3xl text-foreground mb-6">Patient Onboarding Process</h2>
               <p className="text-lg text-muted mb-10 leading-relaxed">
                 To provide the highest standard of care, we utilize a simple onboarding process for new patients. This ensures that we fully understand your medical history and can effectively meet your healthcare expectations.
               </p>

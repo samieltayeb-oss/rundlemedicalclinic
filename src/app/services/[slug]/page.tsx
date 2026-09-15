@@ -221,7 +221,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
           <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/80 to-foreground/40" />
         </div>
         <div className="container relative z-10 mx-auto px-4 md:px-8">
-          <Link href="/services" className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors mb-8">
+          <Link href="/services" className="inline-flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" /> Back to All Services
           </Link>
           <div className="max-w-3xl">

@@ -24,7 +24,7 @@ export default function AboutPage() {
   return (
     <div className="bg-background min-h-screen pb-24">
       {/* Page Header */}
-      <SectionReveal className="relative pt-24 pb-28 border-b border-border overflow-hidden bg-foreground">
+      <section className="relative pt-24 pb-28 border-b border-border overflow-hidden bg-foreground">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/assets/production/web/hero-about.webp"
@@ -43,7 +43,7 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-      </SectionReveal>
+      </section>
 
       {/* Main Content */}
       <section className="py-20">
@@ -94,7 +94,7 @@ export default function AboutPage() {
       {/* Call to Action */}
       <section className="bg-primary/5 py-24 border-t border-border">
         <div className="container mx-auto px-4 md:px-8 text-center max-w-2xl">
-          <h2 className="font-serif text-3xl md:text-4xl text-white mb-6">Join Our Clinic Family</h2>
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">Join Our Clinic Family</h2>
           <p className="text-lg text-muted mb-8">
             For new patient inquiries, please contact our front desk team to confirm current availability and schedule a meet-and-greet appointment.
           </p>
