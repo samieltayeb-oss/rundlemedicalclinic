@@ -213,9 +213,14 @@ export function PharmacyFooter() {
             <span>&bull;</span>
             <span className="flex items-center gap-1.5 text-white/70">
               Built by{" "}
-              <span className="font-extrabold tracking-wider bg-gradient-to-r from-sky-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">
+              <a
+                href="https://nexorayyc.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-extrabold tracking-wider bg-gradient-to-r from-sky-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity underline decoration-emerald-400/40 hover:decoration-emerald-400 underline-offset-4"
+              >
                 NEXORA
-              </span>
+              </a>
             </span>
           </div>
         </div>

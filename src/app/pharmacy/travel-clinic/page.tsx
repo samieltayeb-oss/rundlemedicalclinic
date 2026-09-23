@@ -160,6 +160,40 @@ export default function TravelClinicPage() {
         </div>
       </div>
 
+      {/* Real Clinical Vaccine Administration Photographic Showcase */}
+      <div className="max-w-4xl mx-auto rounded-3xl overflow-hidden border border-amber-500/25 bg-[#041210] p-6 sm:p-8 shadow-2xl">
+        <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center">
+          <div className="sm:col-span-5 rounded-2xl overflow-hidden border border-amber-500/20 shadow-lg">
+            <img
+              src="/brand/pharmacy/flu-shot.jpg"
+              alt="Licensed Pharmacist Administering Clinical Vaccine Injection"
+              className="w-full h-52 object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div className="sm:col-span-7 space-y-3 text-xs sm:text-sm text-white/80">
+            <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 font-bold text-[10px] uppercase tracking-wider">
+              <ShieldCheck className="w-3 h-3" />
+              <span>Certified Injection Pharmacists</span>
+            </div>
+            <h4 className="font-serif text-xl font-bold text-white">
+              Private, Gentle On-Site Immunization Rooms
+            </h4>
+            <p className="text-white/70 leading-relaxed text-xs">
+              Every travel immunization is administered in our private, sanitized consultation room by ACP-certified injection pharmacists. You receive your verified WHO Yellow Card and official stamped international documentation immediately upon completion.
+            </p>
+            <div className="pt-1 flex items-center gap-3">
+              <span className="text-[11px] font-bold text-amber-300">
+                Alberta Netcare Logged
+              </span>
+              <span className="text-white/40">&middot;</span>
+              <span className="text-[11px] text-white/70">
+                Official Border Documentation
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Travel Advice Box */}
       <div className="max-w-4xl mx-auto p-6 sm:p-8 rounded-3xl bg-amber-950/20 border border-amber-500/30 flex items-start gap-4">
         <Clock className="w-6 h-6 text-amber-400 shrink-0 mt-1" />

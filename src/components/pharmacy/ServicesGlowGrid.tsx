@@ -194,7 +194,7 @@ function ServiceGlowCard({
         </span>
 
         <Link
-          href={`/pharmacy/services#${service.slug}`}
+          href={`/pharmacy/services/${service.slug}`}
           className="text-xs font-bold text-white group-hover:text-emerald-300 flex items-center gap-1 transition-colors"
         >
           <span>Learn more</span>

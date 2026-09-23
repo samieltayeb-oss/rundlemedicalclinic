@@ -152,6 +152,40 @@ export default function TBTestingPage() {
           </div>
         </div>
       </div>
+
+      {/* In-Store Authentic Poster & Walk-In Proof Card */}
+      <div className="max-w-4xl mx-auto p-6 sm:p-8 rounded-3xl bg-[#041210] border border-emerald-500/20 shadow-2xl">
+        <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center">
+          <div className="sm:col-span-5 rounded-2xl overflow-hidden border border-emerald-500/30 shadow-lg bg-black/60">
+            <img
+              src="/brand/pharmacy/tb-sign.png"
+              alt="Official Rundle Pharmacy $60 TB Testing In-Store Sign"
+              className="w-full h-auto object-contain hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div className="sm:col-span-7 space-y-3 text-xs sm:text-sm text-white/80">
+            <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 font-bold text-[10px] uppercase tracking-wider">
+              <Sparkles className="w-3 h-3" />
+              <span>Calgary Walk-In Facility</span>
+            </div>
+            <h4 className="font-serif text-xl font-bold text-white">
+              Walk In Any Day &middot; Any Time &middot; 7 Days a Week!
+            </h4>
+            <p className="text-white/70 leading-relaxed text-xs">
+              No doctor referral is required. Visit Rundle Pharmacy directly during open hours to receive your Mantoux skin test immediately. Stamped certification issued on readout.
+            </p>
+            <div className="pt-2">
+              <a
+                href={`tel:${pharmacyData.phone}`}
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs shadow-lg transition-all"
+              >
+                <Phone className="w-3.5 h-3.5" />
+                <span>Call Ahead or Walk In: {pharmacyData.phoneFormatted}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

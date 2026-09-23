@@ -120,6 +120,23 @@ function RefillTransferContent() {
               </a>
             </div>
           </div>
+
+          {/* Complimentary Blister Packs Real Photo Card */}
+          <div className="rounded-3xl overflow-hidden border border-emerald-500/20 shadow-xl group">
+            <img
+              src="/brand/pharmacy/blister-packs.jpg"
+              alt="Multi-Dose Blister Compliance Packaging"
+              className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            <div className="p-4 bg-[#041210] border-t border-emerald-500/15 text-xs space-y-1">
+              <span className="font-bold text-teal-300 block">
+                Free Weekly Blister Packaging
+              </span>
+              <p className="text-white/60 text-[11px] leading-relaxed">
+                Ask our pharmacists to seal your morning, noon, and evening doses into color-coded organizers.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

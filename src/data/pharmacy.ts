@@ -9,6 +9,8 @@ export interface PharmacyService {
   benefits: string[];
   coveredByAHCIP: boolean;
   highlight?: string;
+  imageUrl?: string;
+  imageAlt?: string;
 }
 
 export const pharmacyData = {
@@ -81,6 +83,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: true,
       highlight: "No Doctor Appointment Needed",
+      imageUrl: "/brand/pharmacy/pharmacist-consult.jpg",
+      imageAlt: "Licensed Clinical Pharmacist Assessing Patient Prescriptions",
     },
     {
       id: "refills-transfers",
@@ -98,6 +102,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: true,
       highlight: "Free Delivery Included",
+      imageUrl: "/brand/pharmacy/hero-pharmacy.jpg",
+      imageAlt: "Pharmacist Reviewing Prescription Order Across Dispensary Counter",
     },
     {
       id: "travel-clinic",
@@ -115,6 +121,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: false,
       highlight: "Destination-Specific Protocols",
+      imageUrl: "/brand/pharmacy/travel-clinic.jpg",
+      imageAlt: "Official WHO Yellow Fever Vaccination Certificate & Travel Passport",
     },
     {
       id: "tb-testing",
@@ -132,6 +140,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: false,
       highlight: "$60 Flat Rate · Official Certificate",
+      imageUrl: "/brand/pharmacy/tb-testing.jpg",
+      imageAlt: "Certified Mantoux Tuberculin Skin Test Forearm Administration",
     },
     {
       id: "compounding",
@@ -149,6 +159,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: true,
       highlight: "Bespoke Lab Formulations",
+      imageUrl: "/brand/pharmacy/compounding-lab.jpg",
+      imageAlt: "Pharmaceutical Compounding Formulation Laboratory Bench",
     },
     {
       id: "compliance-packaging",
@@ -166,6 +178,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: true,
       highlight: "Free Packaging & Delivery",
+      imageUrl: "/brand/pharmacy/blister-packs.jpg",
+      imageAlt: "Multi-Dose Weekly Blister Compliance Packaging and Pill Dispensary",
     },
     {
       id: "medication-review",
@@ -183,6 +197,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: true,
       highlight: "Covered by AHCIP",
+      imageUrl: "/brand/pharmacy/pharmacist-consult.jpg",
+      imageAlt: "Clinical Pharmacist Conducting Annual Comprehensive Medication Review",
     },
     {
       id: "flu-shots-immunizations",
@@ -200,6 +216,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: true,
       highlight: "Immediate Walk-In Access",
+      imageUrl: "/brand/pharmacy/flu-shot.jpg",
+      imageAlt: "Clinical Immunization and Flu Shot Administration",
     },
     {
       id: "diabetic-supplies",
@@ -217,6 +235,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: true,
       highlight: "Free Meter Upgrades",
+      imageUrl: "/brand/pharmacy/real/real-diabetic-care.jpg",
+      imageAlt: "Digital Blood Glucose Meter and Diabetes Care Demonstration",
     },
     {
       id: "smoking-cessation",
@@ -234,6 +254,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: true,
       highlight: "Personalized Support",
+      imageUrl: "/brand/pharmacy/real/real-community-care.jpg",
+      imageAlt: "Pharmacist Counseling on Smoking Cessation and Health Longevity",
     },
     {
       id: "otc-consultations",
@@ -251,6 +273,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: true,
       highlight: "Always Available On-Site",
+      imageUrl: "/brand/pharmacy/dispensing-refill.jpg",
+      imageAlt: "Pharmacist Selecting Trusted Over-The-Counter Medicine",
     },
     {
       id: "free-delivery",
@@ -268,6 +292,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: true,
       highlight: "Zero Delivery Fees",
+      imageUrl: "/brand/pharmacy/hero-pharmacy.jpg",
+      imageAlt: "Free Prescription Delivery Packaging for Calgary Patients",
     },
   ],
 };
