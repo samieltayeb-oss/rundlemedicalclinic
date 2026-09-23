@@ -76,6 +76,7 @@ export function Header() {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 8, scale: 0.98 }}
                         transition={{ duration: 0.2 }}
+                        style={{ position: "absolute" }}
                         className="!absolute top-full left-1/2 -translate-x-1/2 w-[680px] max-w-[95vw] bg-[#0a1120]/98 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/20 overflow-hidden grid grid-cols-2 p-7 gap-8 z-[110] text-white mt-3"
                       >
                         {navigation.services.map((group, idx) => (
