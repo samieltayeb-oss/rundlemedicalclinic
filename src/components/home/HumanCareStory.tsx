@@ -7,9 +7,9 @@ export function HumanCareStory() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
           <div className="relative order-2 lg:order-1 overflow-hidden sm:overflow-visible">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/real_clinic_2.png"
+                src="/assets/production/web/human-care-story.webp"
                 alt="Compassionate patient consultation at Rundle Medical Clinic"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
