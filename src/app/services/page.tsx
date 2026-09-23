@@ -110,7 +110,7 @@ export default function ServicesPage() {
   return (
     <div className="bg-background min-h-screen pb-24">
       {/* Page Header */}
-      <section className="relative pt-24 pb-28 border-b border-border overflow-hidden bg-foreground">
+      <section className="relative pt-32 sm:pt-36 pb-24 sm:pb-28 border-b border-border overflow-hidden bg-foreground">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/assets/production/web/hero-services-hub.webp"
@@ -123,7 +123,7 @@ export default function ServicesPage() {
         </div>
         <div className="container relative z-10 mx-auto px-4 md:px-8">
           <div className="max-w-3xl">
-            <span className="inline-block py-1 px-3 rounded-full bg-white/10 text-secondary text-xs font-semibold tracking-widest uppercase mb-4">
+            <span className="inline-block py-1.5 px-4 rounded-full liquid-glass text-secondary text-xs font-semibold tracking-widest uppercase mb-4 border border-white/20">
               Comprehensive Care Directory
             </span>
             <h1 className="font-serif text-4xl md:text-6xl text-white mb-6">Medical Specialties & Services</h1>

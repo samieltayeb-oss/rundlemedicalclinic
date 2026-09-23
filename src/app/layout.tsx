@@ -29,11 +29,15 @@ export default function RootLayout({
   return (
     <html lang="en" className="overflow-x-hidden">
       <body
-        className={`${manrope.variable} ${cormorant.variable} font-sans antialiased bg-background text-foreground flex flex-col min-h-screen pt-20 lg:pt-24 overflow-x-hidden w-full max-w-full`}
+        className={`${manrope.variable} ${cormorant.variable} font-sans antialiased bg-background text-foreground flex flex-col min-h-screen overflow-x-hidden w-full max-w-full`}
       >
-        <div className="fixed top-0 left-0 right-0 z-50 bg-background">
-          <SmartNotice />
-          <Header />
+        <div className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
+          <div className="pointer-events-auto">
+            <SmartNotice />
+          </div>
+          <div className="pointer-events-auto">
+            <Header />
+          </div>
         </div>
         <main className="flex-grow">
           {children}

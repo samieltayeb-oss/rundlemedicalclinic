@@ -11,7 +11,7 @@ export default function ContactPage() {
   return (
     <div className="bg-background min-h-screen pb-24">
       {/* Page Header */}
-      <section className="relative pt-24 pb-28 border-b border-border overflow-hidden bg-foreground">
+      <section className="relative pt-32 sm:pt-36 pb-24 sm:pb-28 border-b border-border overflow-hidden bg-foreground">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/assets/production/web/hero-contact.webp"
