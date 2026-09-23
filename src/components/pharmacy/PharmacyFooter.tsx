@@ -41,15 +41,13 @@ export function PharmacyFooter() {
             </div>
           </div>
 
-          <a
-            href="https://rundlemedicalclinic.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/"
             className="px-5 py-2.5 rounded-full bg-sky-500 hover:bg-sky-400 text-slate-950 text-xs font-bold shadow-lg shadow-sky-500/20 transition-all flex items-center gap-2 shrink-0 group"
           >
-            <span>Visit Medical Clinic Website</span>
-            <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-          </a>
+            <span>Visit Medical Clinic</span>
+            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+          </Link>
         </div>
 
         {/* 4 Column Footer Grid */}
@@ -192,7 +190,7 @@ export function PharmacyFooter() {
           </div>
         </div>
 
-        {/* Bottom Legal & ACP Notice */}
+        {/* Bottom Legal, Sister Clinic Link & NEXORA Credit */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
           <div className="flex items-center gap-2 text-center md:text-left">
             <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -201,19 +199,24 @@ export function PharmacyFooter() {
             </span>
           </div>
 
-          <div className="flex items-center gap-4">
-            <Link href="/pharmacy/privacy" className="hover:text-white transition-colors">
-              Privacy Policy
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <Link href="/pharmacy/contact" className="hover:text-white transition-colors">
+              Patient Care Hours
             </Link>
             <span>&bull;</span>
-            <a
-              href="https://rundlemedicalclinic.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-emerald-400 hover:text-emerald-300 transition-colors"
+            <Link
+              href="/"
+              className="text-sky-400 hover:text-sky-300 font-semibold transition-colors flex items-center gap-1"
             >
-              Rundle Medical Clinic
-            </a>
+              <span>Sister Facility: Rundle Medical Clinic</span>
+            </Link>
+            <span>&bull;</span>
+            <span className="flex items-center gap-1.5 text-white/70">
+              Built by{" "}
+              <span className="font-extrabold tracking-wider bg-gradient-to-r from-sky-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">
+                NEXORA
+              </span>
+            </span>
           </div>
         </div>
       </div>

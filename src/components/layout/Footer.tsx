@@ -126,9 +126,25 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
           <p>&copy; {new Date().getFullYear()} Rundle Medical Clinic. All rights reserved.</p>
-          <p>
-            If you are experiencing a medical emergency, please call 911 or go to the nearest emergency room.
-          </p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <Link href="/privacy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <span>&bull;</span>
+            <Link
+              href="/pharmacy"
+              className="text-secondary hover:text-emerald-300 font-semibold transition-colors flex items-center gap-1"
+            >
+              <span>Sister Facility: Rundle Pharmacy &amp; Travel Clinic</span>
+            </Link>
+            <span>&bull;</span>
+            <span className="flex items-center gap-1.5 text-white/70">
+              Built by{" "}
+              <span className="font-extrabold tracking-wider bg-gradient-to-r from-sky-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">
+                NEXORA
+              </span>
+            </span>
+          </div>
         </div>
       </div>
     </footer>
