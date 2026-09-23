@@ -29,7 +29,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-2 sm:pt-3">
         
         {/* Floating Liquid Glass Pill */}
-        <div className="liquid-glass rounded-2xl lg:rounded-full px-4 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between shadow-2xl">
+        <div className="liquid-glass !overflow-visible rounded-2xl lg:rounded-full px-4 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between shadow-2xl relative">
           
           {/* Brand Identity */}
           <Link href="/" className="flex items-center gap-3 group relative">
@@ -76,7 +76,7 @@ export function Header() {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 8, scale: 0.98 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full -left-28 w-[640px] liquid-glass rounded-3xl shadow-2xl border border-white/20 overflow-hidden grid grid-cols-2 p-7 gap-8 z-50 text-white mt-3"
+                        className="!absolute top-full left-1/2 -translate-x-1/2 w-[680px] max-w-[95vw] bg-[#0a1120]/98 backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/20 overflow-hidden grid grid-cols-2 p-7 gap-8 z-[110] text-white mt-3"
                       >
                         {navigation.services.map((group, idx) => (
                           <div key={idx} className="flex flex-col gap-3">
