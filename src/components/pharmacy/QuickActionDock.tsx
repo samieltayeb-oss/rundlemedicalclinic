@@ -50,7 +50,7 @@ export function QuickActionDock() {
   return (
     <div className="w-full max-w-4xl mx-auto">
       {/* Tab Switcher Bar with Spring Layout Animation */}
-      <div className="bg-[#030d0c]/90 backdrop-blur-2xl p-1.5 rounded-2xl border border-emerald-500/25 shadow-2xl flex flex-wrap sm:flex-nowrap gap-1">
+      <div className="bg-[#030d0c]/90 backdrop-blur-2xl p-1.5 rounded-2xl border border-emerald-500/25 shadow-2xl grid grid-cols-2 sm:flex gap-1.5 sm:gap-1">
         {tabs.map((tab) => {
           const Icon = tab.icon;
           const isActive = activeTab === tab.id;
@@ -58,7 +58,7 @@ export function QuickActionDock() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id as any)}
-              className={`relative flex-1 py-3 px-3.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer ${
+              className={`relative flex-1 py-2.5 sm:py-3 px-2 sm:px-3.5 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-300 flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer ${
                 isActive
                   ? "text-slate-950 font-bold"
                   : "text-white/70 hover:text-white hover:bg-white/5"
@@ -71,8 +71,8 @@ export function QuickActionDock() {
                   transition={{ type: "spring", stiffness: 450, damping: 35 }}
                 />
               )}
-              <span className="relative z-10 flex items-center gap-2">
-                <Icon className={`w-4 h-4 ${isActive ? "text-slate-950" : "text-emerald-400"}`} />
+              <span className="relative z-10 flex items-center gap-1.5 sm:gap-2">
+                <Icon className={`w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 ${isActive ? "text-slate-950" : "text-emerald-400"}`} />
                 <span className="truncate">{tab.label}</span>
               </span>
             </button>

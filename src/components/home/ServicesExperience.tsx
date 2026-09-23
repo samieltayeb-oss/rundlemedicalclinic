@@ -124,37 +124,47 @@ export function ServicesExperience() {
         </div>
 
         {/* Mobile Accordion Layout */}
-        <div className="lg:hidden flex flex-col gap-4">
-          {services.map((service) => (
-            <div key={service.id} className="bg-white/5 rounded-2xl border border-white/10 overflow-hidden">
-              <button 
-                onClick={() => setActiveService(activeService.id === service.id ? services[0] : service)} // toggle logic could be better, just using for expand
-                className="w-full px-6 py-5 flex items-center justify-between text-left"
-              >
-                <div className="flex items-center gap-4">
-                  <span className="font-serif text-primary">{service.id}</span>
-                  <span className="font-serif text-xl">{service.title}</span>
-                </div>
-              </button>
-              
-              <div className="px-6 pb-6 pt-0">
-                <p className="text-white/70 mb-6 leading-relaxed text-sm">
-                  {service.desc}
-                </p>
-                <img 
-                  src={service.image} 
-                  alt={service.title}
-                  className="w-full h-48 object-cover rounded-xl mb-6 opacity-80 mix-blend-luminosity"
-                />
-                <Link 
-                  href={service.href}
-                  className="inline-flex items-center gap-2 bg-white text-foreground px-5 py-2.5 rounded-full font-medium text-sm hover:bg-primary hover:text-white transition-colors w-full justify-center"
+        <div className="lg:hidden flex flex-col gap-3">
+          {services.map((service) => {
+            const isOpen = activeService.id === service.id;
+            return (
+              <div key={service.id} className="bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-colors">
+                <button 
+                  type="button"
+                  onClick={() => setActiveService(isOpen ? ({ id: "" } as any) : service)}
+                  className="w-full px-5 py-4 flex items-center justify-between text-left"
                 >
-                  Learn More <ArrowRight className="w-4 h-4" />
-                </Link>
+                  <div className="flex items-center gap-3.5">
+                    <span className="font-serif text-sm font-bold text-primary">{service.id}</span>
+                    <span className="font-serif text-lg font-bold text-white">{service.title}</span>
+                  </div>
+                  <span className={`text-xs text-white/50 px-2 py-0.5 rounded-full bg-white/5 ${isOpen ? "text-primary bg-primary/10" : ""}`}>
+                    {isOpen ? "Close" : "View"}
+                  </span>
+                </button>
+                
+                {isOpen && (
+                  <div className="px-5 pb-5 pt-0">
+                    <p className="text-white/70 mb-4 leading-relaxed text-sm">
+                      {service.desc}
+                    </p>
+                    <img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-44 object-cover rounded-xl mb-4 opacity-85"
+                    />
+                    <Link 
+                      href={service.href}
+                      className="inline-flex items-center gap-2 bg-white text-foreground px-5 py-2.5 rounded-full font-medium text-sm hover:bg-primary hover:text-white transition-colors w-full justify-center shadow-md"
+                    >
+                      <span>Explore {service.title}</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                )}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
       </div>

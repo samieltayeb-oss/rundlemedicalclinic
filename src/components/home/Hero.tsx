@@ -7,7 +7,7 @@ import { clinicData } from "@/data/clinic";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[640px] sm:min-h-[700px] md:min-h-[760px] lg:min-h-[820px] max-h-[960px] flex items-center pt-28 sm:pt-36 lg:pt-40 pb-20 sm:pb-24 overflow-hidden bg-foreground">
+    <section className="relative min-h-auto sm:min-h-[700px] md:min-h-[760px] lg:min-h-[820px] lg:max-h-[960px] flex items-center pt-32 sm:pt-36 lg:pt-40 pb-16 sm:pb-24 overflow-hidden bg-foreground">
       {/* Background Image — absolutely positioned, full coverage */}
       <div className="absolute inset-0 z-0">
         <Image

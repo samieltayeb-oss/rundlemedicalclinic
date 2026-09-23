@@ -71,12 +71,13 @@ export function PharmacyHeader() {
   return (
     <header className="sticky top-0 z-[100] w-full transition-all bg-[#030d0c]/95 backdrop-blur-xl border-b border-emerald-500/15">
       {/* Top Utility Sister Clinic Bridge */}
-      <div className="bg-[#041210]/95 border-b border-emerald-500/10 py-1.5 px-4 text-xs">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <span className="flex items-center gap-1.5 text-emerald-400 font-medium text-[11px] sm:text-xs">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              Adjoining Rundle Medical Clinic
+      <div className="bg-[#041210]/95 border-b border-emerald-500/10 py-1.5 px-3 sm:px-4 text-xs">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 sm:gap-3 truncate">
+            <span className="flex items-center gap-1.5 text-emerald-400 font-medium text-[11px] sm:text-xs truncate">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+              <span className="hidden sm:inline">Adjoining Rundle Medical Clinic</span>
+              <span className="sm:hidden">Adjoining Clinic</span>
             </span>
             <span className="hidden md:inline text-white/40">|</span>
             <span className="hidden md:inline text-white/70 text-[11px] sm:text-xs">
@@ -84,14 +85,15 @@ export function PharmacyHeader() {
             </span>
           </div>
 
-          <div className="flex items-center gap-4 text-[11px] sm:text-xs">
+          <div className="flex items-center gap-2.5 sm:gap-4 text-[11px] sm:text-xs shrink-0">
             <a
               href="https://rundlemedicalclinic.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-white/80 hover:text-emerald-300 font-medium transition-colors group"
+              className="inline-flex items-center gap-1 text-white/80 hover:text-emerald-300 font-medium transition-colors group"
             >
-              <span>Visit Medical Clinic</span>
+              <span className="hidden sm:inline">Visit Medical Clinic</span>
+              <span className="sm:hidden">Clinic</span>
               <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
             </a>
             <span className="text-white/30">&bull;</span>
@@ -283,7 +285,7 @@ export function PharmacyHeader() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="lg:hidden mx-3 sm:mx-6 mb-3 bg-[#030d0c]/98 backdrop-blur-2xl rounded-3xl border border-emerald-500/25 p-5 shadow-2xl overflow-hidden z-50"
+            className="lg:hidden mx-3 sm:mx-6 mb-3 bg-[#030d0c]/98 backdrop-blur-2xl rounded-3xl border border-emerald-500/25 p-5 shadow-2xl max-h-[calc(100dvh-120px)] overflow-y-auto overscroll-contain z-50"
           >
             <div className="flex flex-col gap-2">
               {mainNav.map((item) =>
