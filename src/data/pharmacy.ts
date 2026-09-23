@@ -83,8 +83,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: true,
       highlight: "No Doctor Appointment Needed",
-      imageUrl: "/brand/pharmacy/pharmacist-consult.jpg",
-      imageAlt: "Licensed Clinical Pharmacist Assessing Patient Prescriptions",
+      imageUrl: "/brand/pharmacy/prescribing-pharmacist-consult.jpg",
+      imageAlt: "Licensed Clinical Prescribing Pharmacist Consulting with Patient in Private Clinical Office",
     },
     {
       id: "refills-transfers",
@@ -197,8 +197,8 @@ export const pharmacyData = {
       ],
       coveredByAHCIP: true,
       highlight: "Covered by AHCIP",
-      imageUrl: "/brand/pharmacy/pharmacist-consult.jpg",
-      imageAlt: "Clinical Pharmacist Conducting Annual Comprehensive Medication Review",
+      imageUrl: "/brand/pharmacy/medication-review-assessment.jpg",
+      imageAlt: "Clinical Pharmacist Reviewing Comprehensive Annual Medication Care Plan and Blister Pack with Senior Patient",
     },
     {
       id: "flu-shots-immunizations",
