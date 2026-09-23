@@ -17,7 +17,7 @@ import {
 
 export function PharmacyHero() {
   return (
-    <section className="relative min-h-[92vh] flex flex-col justify-between pt-24 sm:pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#030d0c]">
+    <section className="relative min-h-[85vh] sm:min-h-[90vh] flex flex-col justify-between pt-10 sm:pt-14 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#030d0c]">
       {/* Background Image Container with Bioluminescent Gradient Masks */}
       <div className="absolute inset-0 z-0">
         <img
