@@ -95,6 +95,35 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Sister Pharmacy Banner */}
+        <div className="mb-12 p-6 rounded-3xl bg-gradient-to-r from-emerald-950/40 via-surface/5 to-teal-950/40 border border-emerald-500/20 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-4">
+            <img
+              src="/brand/pharmacy/logo.png"
+              alt="Rundle Pharmacy & Travel Clinic"
+              className="h-12 w-auto object-contain shrink-0"
+            />
+            <div>
+              <span className="text-[10px] uppercase font-bold text-emerald-400 tracking-wider block">
+                Directly Adjoining Healthcare Facility
+              </span>
+              <h4 className="font-serif text-lg sm:text-xl font-bold text-white">
+                Rundle Pharmacy &amp; Travel Clinic
+              </h4>
+              <p className="text-xs text-white/70">
+                Unit 11 (next door) &middot; Prescribing pharmacists, travel vaccines, compounding &amp; free Calgary delivery.
+              </p>
+            </div>
+          </div>
+
+          <Link
+            href="/pharmacy"
+            className="px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-bold shadow-lg shadow-emerald-500/20 transition-all flex items-center gap-2 shrink-0"
+          >
+            <span>Visit Pharmacy &rarr;</span>
+          </Link>
+        </div>
+
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
           <p>&copy; {new Date().getFullYear()} Rundle Medical Clinic. All rights reserved.</p>
           <p>

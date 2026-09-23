@@ -3,9 +3,9 @@ export const navigation = {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
+    { label: "Pharmacy", href: "/pharmacy" },
     { label: "Our Team", href: "/team" },
     { label: "New Patients", href: "/new-patients" },
-    { label: "Patient Resources", href: "/patient-resources" },
     { label: "Contact", href: "/contact" }
   ],
   services: [

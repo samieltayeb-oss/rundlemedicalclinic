@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
-import { SmartNotice } from "@/components/layout/SmartNotice";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
+import { SiteLayoutWrapper } from "@/components/layout/SiteLayoutWrapper";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -41,18 +39,7 @@ export default function RootLayout({
       <body
         className={`${manrope.variable} ${cormorant.variable} font-sans antialiased bg-background text-foreground flex flex-col min-h-screen overflow-x-hidden w-full max-w-full`}
       >
-        <div className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
-          <div className="pointer-events-auto">
-            <SmartNotice />
-          </div>
-          <div className="pointer-events-auto">
-            <Header />
-          </div>
-        </div>
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
+        <SiteLayoutWrapper>{children}</SiteLayoutWrapper>
       </body>
     </html>
   );
